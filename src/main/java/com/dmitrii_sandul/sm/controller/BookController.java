@@ -19,7 +19,7 @@ public class BookController {
         this.bookService = bookService;
     }
 
-    @Operation(summary = "Borrow a book", description = "Allows a user to borrow a book if available.")
+    @Operation(summary = "Add book", description = "Allows a user to add a new book.")
     @PostMapping
     public Book addBook(@RequestParam String title, int count) {
         return bookService.addBook(title, count);

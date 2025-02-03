@@ -1,7 +1,9 @@
 package com.dmitrii_sandul.sm.repository;
 
-import com.dmitrii_sandul.sm.model.User;
+import com.dmitrii_sandul.sm.model.UserProfile;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserRepository extends JpaRepository<User, Long> {
+@Repository
+public interface UserRepository extends JpaRepository<UserProfile, Long> {
 }
